@@ -2,6 +2,9 @@
   "swagger": "2.0",
   "info": {
     "title": "MonitorManagementClient",
+    "x-ms-code-generation-settings": {
+      "name": "MonitorManagementClient"
+    },
     "version": "2017-12-01-preview"
   },
   "host": "management.azure.com",
@@ -86,25 +89,12 @@
       },
       "description": "The fully qualified metric namespace name."
     },
-    "NamespaceClassification": {
-      "type": "string",
-      "description": "Kind of namespace",
-      "enum": [
-        "Platform",
-        "Custom",
-        "Qos"
-      ],
-      "x-ms-enum": {
-        "name": "NamespaceClassification",
-        "modelAsString": true
-      }
-    },
     "MetricNamespace": {
       "type": "object",
       "properties": {
         "id": {
           "type": "string",
-          "description": "The ID of the metric namespace."
+          "description": "The ID of the metricNamespace."
         },
         "type": {
           "type": "string",
@@ -112,11 +102,7 @@
         },
         "name": {
           "type": "string",
-          "description": "The escaped name of the namespace."
-        },
-        "classification": {
-          "$ref": "#/definitions/NamespaceClassification",
-          "description": "Kind of namespace"
+          "description": "The name of the namespace."
         },
         "properties": {
           "$ref": "#/definitions/MetricNamespaceName",

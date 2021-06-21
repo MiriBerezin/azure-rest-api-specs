@@ -10281,7 +10281,6 @@
         },
         "labStorageType": {
           "description": "Type of storage used by the lab. It can be either Premium or Standard. Default is Premium.",
-          "default": "Premium",
           "enum": [
             "Standard",
             "Premium",
@@ -10576,13 +10575,11 @@
         },
         "password": {
           "description": "The password of the virtual machine administrator.",
-          "type": "string",
-          "x-ms-secret": true
+          "type": "string"
         },
         "sshKey": {
           "description": "The SSH key of the virtual machine administrator.",
-          "type": "string",
-          "x-ms-secret": true
+          "type": "string"
         },
         "isAuthenticationWithSshKey": {
           "description": "Indicates whether this virtual machine uses an SSH key for authentication.",
@@ -10632,7 +10629,6 @@
         },
         "storageType": {
           "description": "Storage type to use for virtual machine (i.e. Standard, Premium).",
-          "default": "labStorageType",
           "type": "string"
         },
         "environmentId": {
@@ -10743,13 +10739,11 @@
         },
         "password": {
           "description": "The password of the virtual machine administrator.",
-          "type": "string",
-          "x-ms-secret": true
+          "type": "string"
         },
         "sshKey": {
           "description": "The SSH key of the virtual machine administrator.",
-          "type": "string",
-          "x-ms-secret": true
+          "type": "string"
         },
         "isAuthenticationWithSshKey": {
           "description": "Indicates whether this virtual machine uses an SSH key for authentication.",
@@ -10819,7 +10813,6 @@
         },
         "storageType": {
           "description": "Storage type to use for virtual machine (i.e. Standard, Premium).",
-          "default": "labStorageType",
           "type": "string"
         },
         "virtualMachineCreationSource": {
@@ -11049,7 +11042,6 @@
       "properties": {
         "status": {
           "description": "If notifications are enabled for this schedule (i.e. Enabled, Disabled).",
-          "default": "Disabled",
           "enum": [
             "Enabled",
             "Disabled"
@@ -11573,8 +11565,7 @@
         },
         "location": {
           "description": "The location of the new virtual machine or environment",
-          "type": "string",
-          "readOnly": true
+          "type": "string"
         },
         "tags": {
           "description": "The tags of the resource.",
@@ -11596,7 +11587,6 @@
       "properties": {
         "status": {
           "description": "The status of the schedule (i.e. Enabled, Disabled)",
-          "default": "Disabled",
           "enum": [
             "Enabled",
             "Disabled"
@@ -11675,7 +11665,6 @@
       "properties": {
         "status": {
           "description": "The status of the schedule (i.e. Enabled, Disabled)",
-          "default": "Disabled",
           "enum": [
             "Enabled",
             "Disabled"

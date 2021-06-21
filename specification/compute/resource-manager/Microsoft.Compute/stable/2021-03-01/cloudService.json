@@ -103,11 +103,10 @@
           {
             "in": "query",
             "name": "$expand",
-            "description": "The expand expression to apply to the operation. 'UserData' is not supported for cloud services.",
+            "description": "The expand expression to apply to the operation.",
             "type": "string",
             "enum": [
-              "instanceView",
-              "userData"
+              "instanceView"
             ],
             "x-ms-enum": {
               "name": "InstanceViewTypes",
@@ -220,11 +219,10 @@
           {
             "in": "query",
             "name": "$expand",
-            "description": "The expand expression to apply to the operation. 'UserData' is not supported for cloud services.",
+            "description": "The expand expression to apply to the operation.",
             "type": "string",
             "enum": [
-              "instanceView",
-              "userData"
+              "instanceView"
             ],
             "x-ms-enum": {
               "name": "InstanceViewTypes",

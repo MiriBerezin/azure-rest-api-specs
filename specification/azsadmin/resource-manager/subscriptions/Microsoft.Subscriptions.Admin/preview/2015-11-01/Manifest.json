@@ -37,12 +37,6 @@
           }
         ],
         "responses": {
-          "default": {
-            "description": "Unexpected Error",
-            "schema": {
-              "$ref": "Subscriptions.json#/definitions/Error"
-            }
-          },
           "200": {
             "description": "OK",
             "schema": {
@@ -79,12 +73,6 @@
           }
         ],
         "responses": {
-          "default": {
-            "description": "Unexpected Error",
-            "schema": {
-              "$ref": "Subscriptions.json#/definitions/Error"
-            }
-          },
           "200": {
             "description": "OK",
             "schema": {
@@ -290,8 +278,7 @@
         },
         "obsoleteBundlesBitmask": {
           "description": "The obsolete bundles bitmask.",
-          "type": "integer",
-          "format": "int32"
+          "type": "integer"
         },
         "resourceAccess": {
           "description": "The resource access.",
@@ -840,8 +827,7 @@
         },
         "maxChildResourceConsistencyJobLimit": {
           "description": "The next child resource consistency job limit.",
-          "type": "integer",
-          "format": "int32"
+          "type": "integer"
         }
       }
     },

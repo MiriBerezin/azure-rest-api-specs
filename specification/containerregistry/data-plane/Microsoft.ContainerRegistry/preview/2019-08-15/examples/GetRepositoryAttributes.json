@@ -16,8 +16,7 @@
           "deleteEnabled": true,
           "writeEnabled": true,
           "readEnabled": true,
-          "listEnabled": true,
-          "teleportEnabled": true
+          "listEnabled": true
         }
       }
     }

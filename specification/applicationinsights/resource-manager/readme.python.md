@@ -33,7 +33,6 @@ batch:
   - tag: package-2018-06-17-preview
   - tag: package-2019-10-17-preview
   - tag: package-2020-02-02-preview
-  - tag: package-2020-02-02
   - tag: package-2020-03-01-preview
   - tag: package-preview-2020-06-only
 ```
@@ -45,7 +44,6 @@ batch:
   - tag: package-2018-06-17-preview
   - tag: package-2019-10-17-preview
   - tag: package-2020-02-02-preview
-  - tag: package-2020-02-02
   - tag: package-2020-03-01-preview
   - tag: package-preview-2020-06-only
   - multiapiscript: true

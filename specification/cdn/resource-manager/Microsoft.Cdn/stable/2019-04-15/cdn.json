@@ -1642,8 +1642,7 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "x-ms-long-running-operation": true
+        }
       }
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/customDomains/{customDomainName}/enableCustomHttps": {
@@ -1718,8 +1717,7 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "x-ms-long-running-operation": true
+        }
       }
     },
     "/providers/Microsoft.Cdn/checkNameAvailability": {

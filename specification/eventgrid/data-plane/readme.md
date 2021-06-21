@@ -19,7 +19,6 @@ In order to automate the mapping of event definition with event type, please fol
 - The description of the new event should include the event type. This is the `eventType` name in an `EventGridEvent` or `type` name in `CloudEvent`. For e.g. `"Schema of the Data property of an EventGridEvent for a Microsoft.Communication.ChatMessageReceived event.` Here `Microsoft.Communication.ChatMessageReceived` is the event name.
 
 A sample valid event definition is shown below:
-~~~ markdown
 ```json
 "AcsChatMessageReceivedEventData": {
   "description": "Schema of the Data property of an EventGridEvent for a Microsoft.Communication.ChatMessageReceived event.",
@@ -36,7 +35,6 @@ A sample valid event definition is shown below:
   }
 }
 ```
-~~~
 
 ---
 ## Getting Started
@@ -86,7 +84,6 @@ input-file:
 - Microsoft.Web/stable/2018-01-01/Web.json
 - Microsoft.Communication/stable/2018-01-01/AzureCommunicationServices.json
 - Microsoft.PolicyInsights/stable/2018-01-01/PolicyInsights.json
-
 ```
 
 ### Suppression

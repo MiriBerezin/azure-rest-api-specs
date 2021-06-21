@@ -736,7 +736,7 @@
       ],
       "properties": {
         "identity": {
-          "$ref": "../../../common/v2/types.json#/definitions/ResourceIdentity",
+          "$ref": "#/definitions/ResourceIdentityWithUserAssignedIdentities",
           "description": "The Azure Active Directory identity of the server.",
           "x-ms-mutability": [
             "read",
@@ -760,7 +760,7 @@
       "type": "object",
       "properties": {
         "identity": {
-          "$ref": "../../../common/v2/types.json#/definitions/ResourceIdentity",
+          "$ref": "#/definitions/ResourceIdentityWithUserAssignedIdentities",
           "description": "Server identity"
         },
         "properties": {

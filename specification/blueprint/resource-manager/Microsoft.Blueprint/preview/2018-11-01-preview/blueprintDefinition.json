@@ -972,7 +972,6 @@
         },
         "layout": {
           "type": "object",
-          "readOnly": true,
           "description": "Layout view of the blueprint definition for UI reference."
         }
       },

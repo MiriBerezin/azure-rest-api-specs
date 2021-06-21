@@ -10,8 +10,7 @@
       "properties": {
         "channelName": "DirectLineSpeechChannel",
         "properties": {
-          "cognitiveServiceRegion": "XcognitiveServiceRegionX",
-          "cognitiveServiceSubscriptionKey": "XcognitiveServiceSubscriptionKeyX",
+          "cognitiveServicesSubscriptionId": "XcognitiveServicesSubscriptionIdX",
           "isEnabled": true
         }
       }
@@ -24,7 +23,7 @@
         "properties": {
           "channelName": "DirectLineSpeechChannel",
           "properties": {
-            "cognitiveServiceRegion": "XcognitiveServiceRegionX",
+            "cognitiveServicesSubscriptionId": "XcognitiveServicesSubscriptionIdX",
             "isEnabled": true
           }
         }
@@ -36,7 +35,7 @@
         "properties": {
           "channelName": "DirectLineSpeechChannel",
           "properties": {
-            "cognitiveServiceRegion": "XcognitiveServiceRegionX",
+            "cognitiveServicesSubscriptionId": "XcognitiveServicesSubscriptionIdX",
             "isEnabled": true
           }
         }

@@ -184,7 +184,7 @@
     },
     "Unit": {
       "type": "string",
-      "description": "The unit of the metric.",
+      "description": "the unit of the metric.",
       "enum": [
         "Count",
         "Bytes",
@@ -192,13 +192,7 @@
         "CountPerSecond",
         "BytesPerSecond",
         "Percent",
-        "MilliSeconds",
-        "ByteSeconds",
-        "Unspecified",
-        "Cores",
-        "MilliCores",
-        "NanoCores",
-        "BitsPerSecond"
+        "MilliSeconds"
       ],
       "x-ms-enum": {
         "name": "Unit",

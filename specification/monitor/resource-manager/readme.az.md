@@ -24,7 +24,7 @@ This directory contains the CLI common model for the Azure Monitor Control Servi
 > Metadata
 ``` yaml $(AMCS)
 
-extension-mode: stable
+extension-mode: preview
 
 directive:
 
@@ -49,41 +49,20 @@ directive:
       group: monitor data-collection rule-association
     set:
       group: monitor data-collection rule association
-  
-  - where:
-      group: monitor monitor-control-service data-collection-endpoint
-    set:
-      group: monitor data-collection-endpoint
-  - where:
-      group: monitor data-collection-endpoint
-    set:
-      group: monitor data-collection endpoint
 
 cli:
     cli-directive:
-# -------- data-collection endpoint --------
-      - where:
-          group: DataCollectionEndpoints
-          param: dataCollectionEndpointName
-        alias:
-          - name
-          - n
-      - where:
-          group: DataCollectionEndpoints
-          op: Create
-        hidden: True
-      - where:
-          group: DataCollectionEndpoints
-          op: Update
-        hidden: True
-
-# -------- data-collection rule --------
+# -------- data-collection rule ---------
       - where:
           group: DataCollectionRules
           param: dataCollectionRuleName
         alias:
           - name
           - n
+      - where:
+          group: DataCollectionRuleAssociations
+          op: Create
+        hidden: True
       - where:
           group: DataCollectionRules
           op: Create
@@ -110,8 +89,4 @@ cli:
         alias:
           - name
           - n
-      - where:
-          group: DataCollectionRuleAssociations
-          op: Create
-        hidden: True
 ```

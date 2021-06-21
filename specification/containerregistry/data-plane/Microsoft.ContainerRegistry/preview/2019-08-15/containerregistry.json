@@ -731,7 +731,13 @@
             "$ref": "#/parameters/ImageName"
           },
           {
-            "$ref": "#/parameters/RepositoryAttributeValue"
+            "name": "value",
+            "in": "body",
+            "description": "Repository attribute value",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/ChangeableAttributes"
+            }
           }
         ],
         "responses": {
@@ -852,7 +858,7 @@
             "$ref": "#/parameters/TagReference"
           },
           {
-            "$ref": "#/parameters/TagAttributeValue"
+            "$ref": "#/parameters/RepoValue"
           }
         ],
         "responses": {
@@ -1005,7 +1011,7 @@
             "$ref": "#/parameters/ImageReference"
           },
           {
-            "$ref": "#/parameters/ManifestAttributeValue"
+            "$ref": "#/parameters/RepoValue"
           }
         ],
         "responses": {
@@ -1360,7 +1366,7 @@
         },
         "changeableAttributes": {
           "description": "Changeable attributes",
-          "$ref": "#/definitions/RepositoryChangeableAttributes"
+          "$ref": "#/definitions/ChangeableAttributes"
         }
       },
       "example": {
@@ -1369,8 +1375,7 @@
           "readEnabled": true,
           "listEnabled": true,
           "deleteEnabled": true,
-          "writeEnabled": true,
-          "teleportEnabled": false
+          "writeEnabled": true
         },
         "imageName": "imageName",
         "createdTime": "2018-09-07T16:30:46.6583219Z",
@@ -1490,8 +1495,8 @@
           "description": "Is signed"
         },
         "changeableAttributes": {
-          "$ref": "#/definitions/TagChangeableAttributes",
-          "description": "Tag Changeable attributes"
+          "$ref": "#/definitions/ChangeableAttributes",
+          "description": "Changeable attributes"
         }
       },
       "example": {
@@ -1667,7 +1672,7 @@
           }
         },
         "changeableAttributes": {
-          "$ref": "#/definitions/ManifestChangeableAttributes",
+          "$ref": "#/definitions/ChangeableAttributes",
           "description": "Changeable attributes"
         }
       },
@@ -1927,7 +1932,7 @@
         "digest": "sha256:5d20c808ce198565ff70b3ed23a991dd49afac45dece63474b27ce6ed036adc6"
       }
     },
-    "TagChangeableAttributes": {
+    "ChangeableAttributes": {
       "properties": {
         "deleteEnabled": {
           "type": "boolean",
@@ -2040,13 +2045,11 @@
         },
         "quarantineState": {
           "type": "string",
-          "description": "Quarantine state",
-          "x-accessibility": "internal"
+          "description": "Quarantine state"
         },
         "quarantineDetails": {
           "type": "string",
-          "description": "Quarantine details",
-          "x-accessibility": "internal"
+          "description": "Quarantine details"
         }
       },
       "example": {
@@ -2056,38 +2059,6 @@
         "listEnabled": true,
         "deleteEnabled": true,
         "writeEnabled": true
-      }
-    },
-    "RepositoryChangeableAttributes": {
-      "description": "Changeable attributes for Repository",
-      "properties": {
-        "deleteEnabled": {
-          "type": "boolean",
-          "description": "Delete enabled"
-        },
-        "writeEnabled": {
-          "type": "boolean",
-          "description": "Write enabled"
-        },
-        "listEnabled": {
-          "type": "boolean",
-          "description": "List enabled"
-        },
-        "readEnabled": {
-          "type": "boolean",
-          "description": "Read enabled"
-        },
-        "teleportEnabled": {
-          "type": "boolean",
-          "description": "Enables Teleport functionality on new images in the repository improving Container startup performance"
-        }
-      },
-      "example": {
-        "readEnabled": true,
-        "listEnabled": true,
-        "deleteEnabled": true,
-        "writeEnabled": true,
-        "teleportEnabled": true
       }
     },
     "Manifest": {
@@ -2500,33 +2471,13 @@
       "type": "string",
       "x-ms-parameter-location": "method"
     },
-    "RepositoryAttributeValue": {
+    "RepoValue": {
       "name": "value",
       "in": "body",
       "description": "Repository attribute value",
       "required": false,
       "schema": {
-        "$ref": "#/definitions/RepositoryChangeableAttributes"
-      },
-      "x-ms-parameter-location": "method"
-    },
-    "TagAttributeValue": {
-      "name": "value",
-      "in": "body",
-      "description": "Tag attribute value",
-      "required": false,
-      "schema": {
-        "$ref": "#/definitions/TagChangeableAttributes"
-      },
-      "x-ms-parameter-location": "method"
-    },
-    "ManifestAttributeValue": {
-      "name": "value",
-      "in": "body",
-      "description": "Manifest attribute value",
-      "required": false,
-      "schema": {
-        "$ref": "#/definitions/ManifestChangeableAttributes"
+        "$ref": "#/definitions/ChangeableAttributes"
       },
       "x-ms-parameter-location": "method"
     },

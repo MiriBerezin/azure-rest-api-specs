@@ -385,8 +385,8 @@
       ],
       "properties": {
         "filePattern": {
-          "type": "object",
-          "description": "File pattern of JSON. To be more specific, the way of separating a collection of JSON objects. The default value is 'setOfObjects'. It is case-sensitive."
+          "description": "File pattern of JSON. To be more specific, the way of separating a collection of JSON objects. The default value is 'setOfObjects'. It is case-sensitive.",
+          "$ref": "#/definitions/JsonFormatFilePattern"
         },
         "nestingSeparator": {
           "type": "object",
@@ -408,7 +408,7 @@
     },
     "JsonFormatFilePattern": {
       "description": "JSON format file pattern. A property of JsonFormat.",
-      "type": "string",
+      "type": "object",
       "enum": [
         "setOfObjects",
         "arrayOfObjects"
@@ -484,8 +484,8 @@
       ],
       "properties": {
         "level": {
-          "type": "object",
-          "description": "The GZip compression level."
+          "description": "The GZip compression level.",
+          "$ref": "#/definitions/CompressionLevel"
         }
       }
     },
@@ -500,8 +500,8 @@
       ],
       "properties": {
         "level": {
-          "type": "object",
-          "description": "The Deflate compression level."
+          "description": "The Deflate compression level.",
+          "$ref": "#/definitions/CompressionLevel"
         }
       }
     },
@@ -516,8 +516,8 @@
       ],
       "properties": {
         "level": {
-          "type": "object",
-          "description": "The ZipDeflate compression level."
+          "description": "The ZipDeflate compression level.",
+          "$ref": "#/definitions/CompressionLevel"
         }
       }
     },
@@ -543,15 +543,15 @@
       ],
       "properties": {
         "level": {
-          "type": "object",
-          "description": "The TarGZip compression level."
+          "description": "The TarGZip compression level.",
+          "$ref": "#/definitions/CompressionLevel"
         }
       }
     },
     "CompressionLevel": {
       "title": "Microsoft.Azure.Management.DataFactories.Models.CompressionLevel",
       "description": "All available compression levels.",
-      "type": "string",
+      "type": "object",
       "enum": [
         "Optimal",
         "Fastest"
@@ -646,8 +646,18 @@
           "description": "The location of the avro storage."
         },
         "avroCompressionCodec": {
-          "type": "object",
-          "description": "The data avroCompressionCodec. Type: string (or Expression with resultType string)."
+          "type": "string",
+          "enum": [
+            "none",
+            "deflate",
+            "snappy",
+            "xz",
+            "bzip2"
+          ],
+          "x-ms-enum": {
+            "name": "avroCompressionCodec",
+            "modelAsString": true
+          }
         },
         "avroCompressionLevel": {
           "type": "integer",
@@ -658,20 +668,6 @@
       "required": [
         "location"
       ]
-    },
-    "AvroCompressionCodec": {
-      "type": "string",
-      "enum": [
-        "none",
-        "deflate",
-        "snappy",
-        "xz",
-        "bzip2"
-      ],
-      "x-ms-enum": {
-        "name": "avroCompressionCodec",
-        "modelAsString": true
-      }
     },
     "ExcelDataset": {
       "x-ms-discriminator-value": "Excel",
@@ -752,7 +748,16 @@
         },
         "compressionCodec": {
           "type": "object",
-          "description": "The data compressionCodec. Type: string (or Expression with resultType string)."
+          "enum": [
+            "none",
+            "gzip",
+            "snappy",
+            "lzo"
+          ],
+          "x-ms-enum": {
+            "name": "compressionCodec",
+            "modelAsString": true
+          }
         }
       },
       "required": [
@@ -797,11 +802,24 @@
         },
         "compressionCodec": {
           "type": "object",
-          "description": "The data compressionCodec. Type: string (or Expression with resultType string)."
+          "enum": [
+            "bzip2",
+            "gzip",
+            "deflate",
+            "zipDeflate",
+            "snappy",
+            "lz4",
+            "tar",
+            "tarGZip"
+          ],
+          "x-ms-enum": {
+            "name": "compressionCodec",
+            "modelAsString": true
+          }
         },
         "compressionLevel": {
-          "type": "object",
-          "description": "The data compression method used for DelimitedText."
+          "description": "The data compression method used for DelimitedText.",
+          "$ref": "#/definitions/CompressionLevel"
         },
         "quoteChar": {
           "type": "object",
@@ -823,26 +841,6 @@
       "required": [
         "location"
       ]
-    },
-    "CompressionCodec": {
-      "description": "All available compressionCodec values.",
-      "type": "string",
-      "enum": [
-        "none",
-        "lzo",
-        "bzip2",
-        "gzip",
-        "deflate",
-        "zipDeflate",
-        "snappy",
-        "lz4",
-        "tar",
-        "tarGZip"
-      ],
-      "x-ms-enum": {
-        "name": "CompressionCodec",
-        "modelAsString": true
-      }
     },
     "JsonDataset": {
       "x-ms-discriminator-value": "Json",
@@ -947,26 +945,22 @@
           "description": "The location of the ORC data storage."
         },
         "orcCompressionCodec": {
-          "type": "object",
-          "description": "The data orcCompressionCodec. Type: string (or Expression with resultType string)."
+          "type": "string",
+          "enum": [
+            "none",
+            "zlib",
+            "snappy",
+            "lzo"
+          ],
+          "x-ms-enum": {
+            "name": "orcCompressionCodec",
+            "modelAsString": true
+          }
         }
       },
       "required": [
         "location"
       ]
-    },
-    "OrcCompressionCodec": {
-      "type": "string",
-      "enum": [
-        "none",
-        "zlib",
-        "snappy",
-        "lzo"
-      ],
-      "x-ms-enum": {
-        "name": "orcCompressionCodec",
-        "modelAsString": true
-      }
     },
     "BinaryDataset": {
       "x-ms-discriminator-value": "Binary",

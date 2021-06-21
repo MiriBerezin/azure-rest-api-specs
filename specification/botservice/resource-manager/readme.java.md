@@ -10,8 +10,6 @@ namespace: com.microsoft.azure.management.botservice
 license-header: MICROSOFT_MIT_NO_CODEGEN
 payload-flattening-threshold: 1
 output-folder: $(azure-libraries-for-java-folder)/azure-mgmt-botservice
-
-service-name: BotService
 ```
 
 ### Java multi-api

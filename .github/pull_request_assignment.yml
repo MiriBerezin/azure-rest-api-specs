@@ -12,12 +12,6 @@
       - "specification/confidentialledger/data-plane/**"
     reviewers:
       - christothes 
-      
-- rule:
-    paths:
-      - "specification/@(applicationinsights|operationalinsights)/**"
-    reviewers:
-      - akning-ms
 
 - rule:
     # eventgrid data-plane PR
@@ -53,8 +47,14 @@
     paths:
       - "specification/network/**"
     reviewers:
+      - kairu-ms
       - lirenhe
 
+- rule:
+    paths:
+      - "specification/@(applicationinsights|operationalinsights)/**"
+    reviewers:
+      - kairu-ms
 
 - rule:
     paths: "specification/@(resources|powerplatform|appplatform|deviceupdate)/**"
@@ -69,7 +69,7 @@
 - rule:
     paths: "specification/sql/**"
     reviewers:
-      - zhenglaizhang
+      - akning-ms
       
 - rule:
     paths: "specification/signalr/**"
@@ -94,34 +94,40 @@
 
 - rule:
     paths:
+      - "specification/azureactivedirectory/**"
+    reviewers:
+      - njuCZ
+
+- rule:
+    paths:
       - "specification/authorization/**"
     reviewers:
-      - ruowan
+      - qianwens
 
 - rule:
     paths:
       - "specification/datafactory/**"
     reviewers:
-      - leni-msft
+      - qianwens
 
 - rule:
     paths:
       - "specification/monitor/**"
     reviewers:
       - weidongxu-microsoft
+      - kairu-ms
 
 - rule:
     paths:
       - "specification/storage/**"
     reviewers:
-      - jianyexi
+      - Juliehzl
 
 
 - rule:	
     paths: "specification/mediaservices/**"	
     reviewers:	
       - allenjzhang
-      
 - rule:
     paths:
       - "specification/containerregistry/**"
@@ -172,6 +178,13 @@
       - zhenglaizhang
 
 - rule:
+    paths: 
+      - "specification/azurestack/**"
+      - "specification/automation/**"
+    reviewers:
+      - xiaoxuqi-ms
+
+- rule:
     paths:
       - "documentation/**"
     reviewers:
@@ -197,15 +210,18 @@
     paths:
       - "**"
     reviewers:
+      - erich-wang
       - PhoenixHe-msft
       - lirenhe
       - weidongxu-microsoft
       - ArcturusZhang
       - raych1
+      - ChenTanyi
+      - njuCZ
       - akning-ms
       - leni-msft
+      - qianwens
       - ruowan
       - jianyexi
       - zhenglaizhang
       - chunyu3
-      - changlong-liu

@@ -46,6 +46,9 @@
             "$ref": "examples/ListLocations.json"
           }
         },
+        "externalDocs": {
+          "url": ""
+        },
         "parameters": [
           {
             "$ref": "#/parameters/api-version"
@@ -84,6 +87,9 @@
           "Get locations": {
             "$ref": "examples/GetLocation.json"
           }
+        },
+        "externalDocs": {
+          "url": ""
         },
         "parameters": [
           {
@@ -127,6 +133,9 @@
           "List jobs in a subscription": {
             "$ref": "examples/ListJobsInSubscription.json"
           }
+        },
+        "externalDocs": {
+          "url": ""
         },
         "parameters": [
           {
@@ -184,6 +193,9 @@
           "List jobs in a resource group": {
             "$ref": "examples/ListJobsInResourceGroup.json"
           }
+        },
+        "externalDocs": {
+          "url": ""
         },
         "parameters": [
           {
@@ -248,6 +260,9 @@
             "$ref": "examples/GetExportJob.json"
           }
         },
+        "externalDocs": {
+          "url": ""
+        },
         "parameters": [
           {
             "name": "jobName",
@@ -297,6 +312,9 @@
           "Update export job": {
             "$ref": "examples/UpdateExportJob.json"
           }
+        },
+        "externalDocs": {
+          "url": ""
         },
         "parameters": [
           {
@@ -356,6 +374,9 @@
           "Create export job": {
             "$ref": "examples/CreateExportJob.json"
           }
+        },
+        "externalDocs": {
+          "url": ""
         },
         "parameters": [
           {
@@ -422,6 +443,9 @@
             "$ref": "examples/DeleteJob.json"
           }
         },
+        "externalDocs": {
+          "url": ""
+        },
         "parameters": [
           {
             "name": "jobName",
@@ -467,6 +491,9 @@
           "List BitLocker Keys for drives in a job": {
             "$ref": "examples/ListBitLockerKeys.json"
           }
+        },
+        "externalDocs": {
+          "url": ""
         },
         "parameters": [
           {
@@ -519,6 +546,9 @@
           "List available operations": {
             "$ref": "examples/ListOperations.json"
           }
+        },
+        "externalDocs": {
+          "url": ""
         },
         "parameters": [
           {

@@ -46,7 +46,6 @@ affinitized
 AFRINIC
 agentpool
 aggregatedcost
-Agri
 AHUB
 AIAPI
 Akamai
@@ -358,7 +357,6 @@ clustername
 CMAF
 Cmdkey
 cmdlet
-cmdlets
 CMEK
 CMMI
 CNAME
@@ -417,7 +415,6 @@ CRDs
 creatable
 createbsl
 createconsumergroup
-createdtime
 createorupdate
 createpreview
 credativ
@@ -450,8 +447,6 @@ CUTOVER
 CVEs
 CVSS
 Cyrl
-dailyforecast
-dailyhistorical
 darkgrey
 databox
 Databricks
@@ -471,10 +466,7 @@ datalakeanalytics
 datalakestore
 Datamasking
 datamigration
-datamodel
-datapath
 datapoint
-datapoints
 dataschema
 Dataset
 datasetid
@@ -587,7 +579,6 @@ Dsms
 DTDL
 Dtus
 duration'PT
-dwgzippackage
 dynamicpersongroups
 EAPMSCHA
 EAPMSCHAP
@@ -649,7 +640,6 @@ exceptiontype
 exfiltrate
 Exfiltration
 experimentids
-Explainability
 explicitlist
 exportconfiguration
 exportdevices
@@ -668,15 +658,12 @@ failover
 failovers
 Fairplay
 Fanout
-farmBeats
-FarmBeats
 fatherable
 faultable
 fconfig
 FDID
 fearthecowboy
 featurecapabilities
-featurestate
 Featurization
 featurized
 Featurizer
@@ -725,8 +712,6 @@ generatevpnprofile
 geobias
 geocode
 geocodes
-geodata
-Geodata
 Geofence
 geofences
 Geofencing
@@ -771,7 +756,6 @@ GOARCH
 GPUMIG
 GPUP
 GPUs
-Grafana
 Grammarly
 GRANTACE
 granularities
@@ -782,7 +766,6 @@ groupedby
 GRPC
 GSMT
 GTFS
-guage
 guestconfiguration
 GUID
 GUIDs
@@ -906,10 +889,8 @@ Iscsi
 iscsiservers
 isdir
 isdirectory
-isfolder
 ishostingenvironmentnameavailable
 ishostnameavailable
-isIdentityCertExprired
 isnullable
 isochrone
 isordered
@@ -1098,7 +1079,6 @@ MCAS
 MDATP
 mebibytes
 mediaservices
-Merkle
 Meru
 Mesos
 messagingplan
@@ -1109,7 +1089,6 @@ Metastores
 Metric's
 metricdefinitions
 metricmetadata
-metricname
 metricnames
 metricnamespace
 metricsadvisor
@@ -1134,7 +1113,6 @@ ML's
 mlapi
 mnist
 modelmanagement
-modifiedtime
 MODIFYACLENTRIES
 monitoringconfiguration
 monitoringconfigurations
@@ -1206,8 +1184,6 @@ nbformat
 Nccl
 nchar
 ndjson
-ndvi
-NDVI
 Neighbourhood
 netapp
 netdev
@@ -1273,7 +1249,6 @@ octokit
 Odata
 odatatype
 ODBC
-oeverify
 offboard
 offboards
 officedocument
@@ -1403,7 +1378,6 @@ preloading
 prem
 premieraddonoffers
 premieraddons
-Preprovisioned
 Prerelease
 prerestore
 pretrained
@@ -1421,8 +1395,6 @@ privatelinkservice
 privatepreview
 projectable
 propogation
-Propagations
-propagations
 Protectable
 Providerhub
 provisioner
@@ -1430,7 +1402,6 @@ provisioningservices
 provisioningState
 Psec
 PSNR
-pstn
 ptrdname
 publicipaddresses
 publicpreview
@@ -1469,8 +1440,8 @@ racyscore
 RAGRS
 RAGZRS
 randint
+randomnumbers
 Rankable
-rasterize
 ratelimit
 ravbhatnagar
 rawwebsockets
@@ -1597,7 +1568,6 @@ rolloverdetails
 rootfs
 rosettanetprocessconfigurations
 rotatediskencryptionkey
-rotationpolicy
 routable
 routingendpointhealth
 rpki
@@ -1695,7 +1665,6 @@ setvpnclientipsecparameters
 sfhealthid
 sfpkg
 shamir_share
-shapefile
 sharded
 sharedkey
 sharename
@@ -1809,7 +1778,6 @@ streamingendpoint
 streamingjobs
 streamingservice
 subcause
-subcode
 subcomponent
 subcomponents
 subdir
@@ -1891,7 +1859,6 @@ templated
 templatelink
 templeton
 temporarydisk
-Tensorboard
 tensorflow
 TEPCO's
 teradata
@@ -1972,14 +1939,12 @@ Undeleting
 unencrypted
 unexamined
 unhide
-unhold
 Unigrams
 uniqueidentifier
 uniquestring
 unitless
 unixtime
 UNKNOWON
-unleased
 unlocalized
 unmanaged
 unmonitored
@@ -2083,7 +2048,6 @@ VMILR
 vmimage
 vmname
 vmotion
-VMOS
 VMQS
 VMSS
 VMSSVM
@@ -2189,18 +2153,6 @@ ziplist
 Zoho
 zoneinfo
 zset
-classificationdef
-entitydef
-termtemplatedef
-enumdef
-relationshipdef
-structdef
-typedefs
-testfailover
-Orignal
-Onprem
-targetv
-Seleted
 classificationrules
 Unparented
 scanrulesets
@@ -2213,5 +2165,3 @@ PPSX
 PPTM
 XLSM
 DOCM
-multislot
-Tebibytes

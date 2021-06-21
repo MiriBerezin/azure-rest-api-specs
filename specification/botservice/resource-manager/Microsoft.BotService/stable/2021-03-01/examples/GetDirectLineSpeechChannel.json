@@ -13,7 +13,7 @@
         "properties": {
           "channelName": "DirectLineSpeechChannel",
           "properties": {
-            "cognitiveServiceRegion": "Cognitive service region",
+            "cognitiveServicesSubscriptionId": "Cognitive services subscription ID",
             "customVoiceDeploymentId": "Custom voice deployment ID",
             "customSpeechModelId": "Custom speech model ID",
             "isDefaultBotForCogSvcAccount": true,

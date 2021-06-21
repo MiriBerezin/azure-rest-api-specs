@@ -8,7 +8,6 @@ python:
   license-header: MICROSOFT_MIT_NO_VERSION
   payload-flattening-threshold: 2
   package-name: azure-mgmt-redhatopenshift
-  package-version: 1.0.0b1
   clear-output-folder: true
   no-namespace-folders: true
 ```
@@ -16,7 +15,6 @@ python:
 azure-arm: true
 license-header: MICROSOFT_MIT_NO_VERSION
 package-name: azure-mgmt-redhatopenshift
-package-version: 1.0.0b1
 clear-output-folder: true
 no-namespace-folders: true
 ```
